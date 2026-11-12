@@ -4,7 +4,7 @@ Plantilla estática de sitio web para un equipo de competición. HTML, CSS y
 JavaScript sin frameworks ni dependencias. Todo el contenido es ficticio y
 sustituible.
 
-**Demo:** pendiente de despliegue.
+**Demo:** https://vertice-racing.vercel.app
 
 ---
 
