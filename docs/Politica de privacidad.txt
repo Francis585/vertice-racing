@@ -1,0 +1,9 @@
+POLÍTICA DE PRIVACIDAD (plantilla)
+
+Este sitio es una plantilla demostrativa. No recoge datos personales:
+el formulario de alta no envía información a ningún servidor.
+
+Si conectas el formulario a un backend, sustituye este texto por tu
+política real e incluye al menos: responsable del tratamiento, finalidad,
+base jurídica, plazo de conservación, destinatarios y derechos del
+interesado (acceso, rectificación, supresión, oposición y portabilidad).

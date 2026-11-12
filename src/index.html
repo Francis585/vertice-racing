@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05090D" />
+    <meta
+      name="description"
+      content="Vértice Racing: escudería de competición con base en Zaragoza. Historia, temporadas, pilotos, el VX-26 y noticias del equipo."
+    />
+    <title>Vértice Racing — Temporada 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../estilos/index.css" />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" type="image/svg+xml" href="../imgs/favicon.svg" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============ NAV ============ -->
+    <header class="site-header" id="siteHeader">
+      <div class="nav-inner">
+        <a class="brand" href="/" aria-label="Vértice Racing, inicio">
+          <span class="brand-word">Vértice<small>Racing</small></span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+          <a href="#escuderia">Escudería</a>
+          <a href="#historia">Historia</a>
+          <a href="#temporadas">Temporadas</a>
+          <a href="#pilotos">Pilotos</a>
+          <a href="#monoplaza">Monoplaza</a>
+          <a href="#noticias">Noticias</a>
+          <a class="nav-cta" href="registro.html">Únete</a>
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    </header>
+
+    <main id="contenido">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="inicio">
+        <div class="hero-media">
+          <div class="ph" style="position:absolute;inset:0">
+            <span class="ph-mark">VX-26</span>
+          </div>
+          <div class="hero-veil"></div>
+          <div class="hero-grain"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow hero-anim" style="--d: 0.1s">
+            <span class="dot"></span> Zaragoza · Temporada <span data-year>2026</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="line"><span style="--d: 0.2s">VÉRTICE</span></span>
+            <span class="line"><span style="--d: 0.32s">RACING</span></span>
+            <span class="line outline"><span style="--d: 0.44s">TEAM</span></span>
+          </h1>
+
+          <p class="hero-sub hero-anim" style="--d: 0.62s">
+            Un equipo joven con fábrica propia y motor propio. Seis temporadas en la
+            categoría reina, cuatro podios y una idea fija: hacer las cosas distintas.
+          </p>
+
+          <div class="hero-actions hero-anim" style="--d: 0.76s">
+            <a class="btn btn-primary" href="#escuderia">
+              Conoce al equipo
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+
+          <dl class="hero-stats hero-anim" style="--d: 0.9s">
+            <div><dt>Fundación</dt><dd>2019</dd></div>
+            <div><dt>Debut</dt><dd>2021</dd></div>
+            <div><dt>Temporada</dt><dd data-year>2026</dd></div>
+            <div><dt>Podios</dt><dd>7</dd></div>
+          </dl>
+        </div>
+
+        <a class="scroll-hint" href="#escuderia" aria-label="Bajar al contenido">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>VÉRTICE RACING</span><i>◆</i><span data-chassis>VX-26</span><i>◆</i>
+          <span data-power-unit>VÉRTICE VR26</span><i>◆</i><span data-team-principal>MARTA IGLESIAS</span><i>◆</i>
+          <span>RUIZ 14</span><i>◆</i><span>BERGER 22</span><i>◆</i>
+          <span>ZARAGOZA</span><i>◆</i>
+          <span>VÉRTICE RACING</span><i>◆</i><span data-chassis>VX-26</span><i>◆</i>
+          <span data-power-unit>VÉRTICE VR26</span><i>◆</i><span data-team-principal>MARTA IGLESIAS</span><i>◆</i>
+          <span>RUIZ 14</span><i>◆</i><span>BERGER 22</span><i>◆</i>
+          <span>ZARAGOZA</span><i>◆</i>
+        </div>
+      </div>
+
+      <!-- ============ ESCUDERÍA ============ -->
+      <section class="section" id="escuderia">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow reveal"><span class="dot"></span> La escudería</p>
+            <h2 class="section-title reveal">
+              Un equipo, una fábrica,<br />
+              <span class="accent">una idea distinta</span>
+            </h2>
+            <p class="section-lead reveal">
+              Vértice Racing compite bajo bandera española desde Zaragoza. En 2026
+              estrena el VX-26, el primer coche con motor propio, y afronta su
+              sexta temporada con una plantilla de 420 personas y un túnel de
+              viento construido desde cero.
+            </p>
+          </header>
+
+          <div class="cards-3">
+            <article class="card reveal">
+              <span class="card-num">01</span>
+              <h3>Zaragoza</h3>
+              <p>
+                La fábrica ocupa una antigua nave industrial rehabilitada junto al
+                Ebro. Túnel de viento propio, simulador de conducción y taller de
+                composites en un mismo edificio, a quince minutos del aeropuerto.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card-num">02</span>
+              <h3>Marta Iglesias</h3>
+              <p>
+                Team Principal desde la fundación. Ingeniera de chasis en tres
+                equipos antes de montar el suyo, dirige la parte técnica y
+                deportiva con la idea de fabricar el mayor número de piezas en casa.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <span class="card-num">03</span>
+              <h3>Vértice Power</h3>
+              <p>
+                La división de motores nació en 2024 con doce ingenieros y hoy
+                firma el VR26, el primer propulsor completo del equipo. Es la
+                apuesta que separa a Vértice del resto de la parrilla.
+              </p>
+            </article>
+          </div>
+
+          <div class="stat-band reveal">
+            <div class="stat"><strong data-count="2019">0</strong><span>Año de fundación</span></div>
+            <div class="stat"><strong data-count="124">0</strong><span>Grandes Premios</span></div>
+            <div class="stat"><strong data-count="602">0</strong><span>Puntos históricos</span></div>
+            <div class="stat"><strong data-count="7">0</strong><span>Podios</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HISTORIA ============ -->
+      <section class="section section-dark" id="historia">
+        <div class="wrap">
+          <header class="section-head section-head-row">
+            <div>
+              <p class="eyebrow reveal"><span class="dot"></span> Historia</p>
+              <h2 class="section-title reveal">
+                Siete años<br />
+                <span class="accent">de recorrido</span>
+              </h2>
+            </div>
+            <div class="cal-nav reveal">
+              <button class="cal-btn" id="tlPrev" aria-label="Etapas anteriores">&#8249;</button>
+              <button class="cal-btn" id="tlNext" aria-label="Etapas siguientes">&#8250;</button>
+            </div>
+          </header>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="tl-year">2019</span>
+              <div class="tl-body">
+                <h3>Nace el proyecto</h3>
+                <p>
+                  Marta Iglesias y cuatro ingenieros fundan Vértice Racing en una
+                  nave de Zaragoza. Sin coche, sin parrilla y con un objetivo:
+                  competir fabricando lo máximo posible en casa.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2021</span>
+              <div class="tl-body">
+                <h3>Debut en la categoría</h3>
+                <p>
+                  El VX-21 llega a la parrilla con Álvaro Ruiz y Nils Berger.
+                  Noveno en constructores con 12 puntos y un coche que acaba
+                  nueve carreras de las veintidós.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2022</span>
+              <div class="tl-body">
+                <h3>Los primeros puntos</h3>
+                <p>
+                  Octavo con 34 puntos. Berger firma dos sextos puestos y el
+                  equipo estrena el túnel de viento propio, que cambia por
+                  completo la forma de desarrollar el coche.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2023</span>
+              <div class="tl-body">
+                <h3>El primer podio</h3>
+                <p>
+                  Monza. Ruiz sale sexto, aguanta la presión doce vueltas y cruza
+                  la meta tercero. Sexto en el campeonato con 128 puntos y dos
+                  podios en total.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2024</span>
+              <div class="tl-body">
+                <h3>El año sólido</h3>
+                <p>
+                  Tres podios y 190 puntos: quinto en constructores, la mejor
+                  temporada del equipo hasta entonces. Vértice Power arranca con doce ingenieros
+                  para diseñar un motor propio.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2025</span>
+              <div class="tl-body">
+                <h3>Año de transición</h3>
+                <p>
+                  Séptimo con 96 puntos y un solo podio. El equipo desvía recursos
+                  al coche de 2026 y asume un año discreto a cambio del salto
+                  técnico del siguiente.
+                </p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="tl-year">2026</span>
+              <div class="tl-body">
+                <h3>La era VX-26</h3>
+                <p>
+                  Debuta el VX-26 con el motor Vértice VR26 y la nueva
+                  reglamentación. Cuarto en constructores con 142 puntos y tres
+                  podios: el mejor arranque de su historia.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ TEMPORADAS ============ -->
+      <section class="section" id="temporadas">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow reveal"><span class="dot"></span> Temporadas</p>
+            <h2 class="section-title reveal">
+              Seis temporadas,<br />
+              <span class="accent">una curva ascendente</span>
+            </h2>
+          </header>
+
+          <!-- Pestañas generadas desde js/f1-data.js -->
+          <div class="tabs reveal" role="tablist" aria-label="Temporadas" id="seasonTabs"></div>
+
+          <!-- Paneles generados desde js/f1-data.js -->
+          <div class="tab-panels" id="seasonPanels"></div>
+
+          <div class="table-wrap reveal">
+            <table class="data-table">
+              <caption>Resultados de Vértice Racing desde su debut</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Año</th>
+                  <th scope="col">Pilotos</th>
+                  <th scope="col">Chasis</th>
+                  <th scope="col">Pos.</th>
+                  <th scope="col">Podios</th>
+                  <th scope="col">Puntos</th>
+                </tr>
+              </thead>
+              <tbody id="seasonsBody">
+                <tr><td>2021</td><td>Ruiz · Berger</td><td>VX-21</td><td>9º</td><td>0</td><td>12</td></tr>
+                <tr><td>2022</td><td>Ruiz · Berger</td><td>VX-22</td><td>8º</td><td>0</td><td>34</td></tr>
+                <tr><td>2023</td><td>Ruiz · Berger</td><td>VX-23</td><td>6º</td><td>2</td><td>128</td></tr>
+                <tr><td>2024</td><td>Ruiz · Berger</td><td>VX-24</td><td>5º</td><td>3</td><td>190</td></tr>
+                <tr><td>2025</td><td>Ruiz · Berger</td><td>VX-25</td><td>7º</td><td>0</td><td>96</td></tr>
+                <tr><td>2026</td><td>Ruiz · Berger</td><td>VX-26</td><td>4º</td><td>2</td><td>142</td></tr>
+              </tbody>
+            </table>
+            <button class="table-more" id="seasonsMore" type="button" aria-expanded="false" aria-controls="seasonsBody" hidden>
+              Ver todas las temporadas
+            </button>
+          </div>
+
+          <!-- Puntos por temporada (se dibuja con SVG) -->
+          <div class="chart-block reveal">
+            <h3 class="block-title">Puntos por temporada</h3>
+            <div class="chart" id="pointsChart" role="img" aria-label="Puntos de Vértice Racing por temporada"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ============ PILOTOS ============ -->
+      <section class="section section-dark" id="pilotos">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow reveal"><span class="dot"></span> Pilotos</p>
+            <h2 class="section-title reveal">
+              Dos generaciones,<br />
+              <span class="accent">un mismo box</span>
+            </h2>
+          </header>
+
+<div class="drivers">
+            <article class="driver reveal" data-driver="ruiz">
+              <div class="driver-media driver-media-cut">
+                <div class="ph" style="position:absolute;inset:0"><span class="ph-mark">RUIZ</span></div>
+                <span class="driver-num">14</span>
+                <span class="driver-flag" aria-label="España">ESP</span>
+                <div class="driver-hover" data-hover>
+                  <p class="dh-title">Temporada <span data-year>2026</span></p>
+                  <dl class="dh-grid">
+                    <div><dt>Mundial</dt><dd data-h-pos>—</dd></div>
+                    <div><dt>Puntos</dt><dd data-h-pts>—</dd></div>
+                    <div><dt>Podios</dt><dd data-h-pod>—</dd></div>
+                    <div><dt>Victorias</dt><dd data-h-win>—</dd></div>
+                    <div><dt>Poles</dt><dd data-h-pole>—</dd></div>
+                    <div><dt>V. rápidas</dt><dd data-h-fast>—</dd></div>
+                    <div><dt>Mejor</dt><dd data-h-best>—</dd></div>
+                    <div><dt>Abandonos</dt><dd data-h-ret>—</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="driver-body">
+                <p class="driver-role">Piloto titular · Jefe de filas</p>
+                <h3>Álvaro Ruiz</h3>
+                <p class="driver-bio">
+                  Zaragoza, 1997. Debutó con el equipo en 2021 tras ganar la
+                  Fórmula 3. Suma los siete podios de la escudería, tres de ellos
+                  en 2026, y es el piloto que más vueltas ha liderado con el VX.
+                </p>
+                <ul class="driver-stats">
+                  <li><strong>7</strong><span>Podios</span></li>
+                  <li><strong>2</strong><span>Poles</span></li>
+                  <li><strong>318</strong><span>Puntos</span></li>
+                  <li><strong>124</strong><span>GP</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="driver reveal" data-driver="berger">
+              <div class="driver-media driver-media-cut">
+                <div class="ph" style="position:absolute;inset:0"><span class="ph-mark">BERGER</span></div>
+                <span class="driver-num">22</span>
+                <span class="driver-flag" aria-label="Alemania">GER</span>
+                <div class="driver-hover" data-hover>
+                  <p class="dh-title">Temporada <span data-year>2026</span></p>
+                  <dl class="dh-grid">
+                    <div><dt>Mundial</dt><dd data-h-pos>—</dd></div>
+                    <div><dt>Puntos</dt><dd data-h-pts>—</dd></div>
+                    <div><dt>Podios</dt><dd data-h-pod>—</dd></div>
+                    <div><dt>Victorias</dt><dd data-h-win>—</dd></div>
+                    <div><dt>Poles</dt><dd data-h-pole>—</dd></div>
+                    <div><dt>V. rápidas</dt><dd data-h-fast>—</dd></div>
+                    <div><dt>Mejor</dt><dd data-h-best>—</dd></div>
+                    <div><dt>Abandonos</dt><dd data-h-ret>—</dd></div>
+                  </dl>
+                </div>
+              </div>
+              <div class="driver-body">
+                <p class="driver-role">Piloto titular</p>
+                <h3>Nils Berger</h3>
+                <p class="driver-bio">
+                  Múnich, 2000. Llegó al equipo en 2021 desde la cantera de
+                  Mercedes. Rápido a una vuelta —suma las dos poles del equipo—
+                  y especialista en circuitos de alta carga aerodinámica.
+                </p>
+                <ul class="driver-stats">
+                  <li><strong>0</strong><span>Victorias</span></li>
+                  <li><strong>2</strong><span>Poles</span></li>
+                  <li><strong>194</strong><span>Puntos</span></li>
+                  <li><strong>124</strong><span>GP</span></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Cantera -->
+          <article class="academy reveal">
+            <div class="academy-media">
+              <div class="ph" style="position:absolute;inset:0"></div>
+              <span class="academy-tag">Academia</span>
+            </div>
+            <div class="academy-body">
+              <p class="eyebrow"><span class="dot"></span> Cantera</p>
+              <h3>Lucía Ferrer</h3>
+              <p class="academy-role">Piloto de la Vértice Driver Academy · Fórmula 2</p>
+              <p class="academy-bio">
+                Valencia, 2003. Primera incorporación de la academia creada en
+                2024. Compite en Fórmula 2 con los colores del equipo y pasa dos
+                días al mes en el simulador de Zaragoza. Su objetivo declarado es
+                un asiento titular en 2028.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ MONOPLAZA ============ -->
+      <section class="section" id="monoplaza">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="eyebrow reveal"><span class="dot"></span> Ingeniería</p>
+            <h2 class="section-title reveal">
+              <span data-chassis>VX-26</span>,<br />
+              <span class="accent">el primer Vértice completo</span>
+            </h2>
+            <p class="section-lead reveal">
+              El primer coche diseñado, fabricado y motorizado íntegramente en
+              Zaragoza. Más ligero que su antecesor, con aerodinámica activa y el
+              motor Vértice VR26: la mayor revolución técnica del equipo.
+            </p>
+          </header>
+
+          <div class="car-band reveal">
+            <div class="ph" style="position:absolute;inset:0"><span class="ph-mark">VX-26</span></div>
+            <span class="car-band-tag"><span data-chassis>VX-26</span> · <span data-year>2026</span></span>
+          </div>
+
+          <div class="split split-top">
+            <div class="split-media reveal">
+              <div class="ph" style="position:absolute;inset:0"><span class="ph-mark">VX-26</span></div>
+              <span class="split-tag">Vértice VR26</span>
+            </div>
+
+            <div class="split-body">
+              <h3 class="split-title reveal">Ficha técnica</h3>
+              <dl class="specs reveal">
+                <div><dt>Chasis</dt><dd data-chassis>VX-26</dd></div>
+                <div><dt>Unidad de potencia</dt><dd data-power-unit>Vértice VR26</dd></div>
+                <div><dt>Arquitectura</dt><dd>V6 1.6 turbo híbrido 50:50</dd></div>
+                <div><dt>Peso mínimo</dt><dd>768 kg</dd></div>
+                <div><dt>Aerodinámica</dt><dd>Activa (ala delantera y trasera)</dd></div>
+                <div><dt>Combustible</dt><dd>100 % sostenible</dd></div>
+                <div><dt>Neumáticos</dt><dd>Pirelli 18"</dd></div>
+                <div><dt>Base</dt><dd>Zaragoza, España</dd></div>
+              </dl>
+
+              <a class="btn btn-primary reveal" href="noticias.html">
+                Ver noticias del equipo
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ NOTICIAS PREVIEW ============ -->
+      <section class="section" id="noticias">
+        <div class="wrap">
+          <header class="section-head section-head-row">
+            <div>
+              <p class="eyebrow reveal"><span class="dot"></span> Actualidad</p>
+              <h2 class="section-title reveal">
+                Últimas<br />
+                <span class="accent">noticias</span>
+              </h2>
+            </div>
+            <a class="link-arrow reveal" href="noticias.html">
+              Todas las noticias
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </header>
+
+          <div class="news-grid">
+            <a class="news-card reveal" href="noticias.html">
+              <div class="news-media">
+                <div class="ph" style="position:absolute;inset:0"></div>
+              </div>
+              <div class="news-body">
+                <span class="news-tag">Equipo</span>
+                <h3>Vértice Power entrega el primer VR26 completo</h3>
+                <p>El motor propio supera las pruebas de banco y llega a la homologación con dos semanas de margen.</p>
+              </div>
+            </a>
+
+            <a class="news-card reveal" href="noticias.html">
+              <div class="news-media">
+                <div class="ph" style="position:absolute;inset:0"></div>
+              </div>
+              <div class="news-body">
+                <span class="news-tag">Coche</span>
+                <h3>El VX-26 gana 14 puntos de carga aerodinámica</h3>
+                <p>La actualización del suelo debutada en Singapur cambia el comportamiento del coche en curva lenta.</p>
+              </div>
+            </a>
+
+            <a class="news-card reveal" href="noticias.html">
+              <div class="news-media">
+                <div class="ph" style="position:absolute;inset:0"></div>
+              </div>
+              <div class="news-body">
+                <span class="news-tag">Pilotos</span>
+                <h3>Ruiz renueva hasta 2029</h3>
+                <p>El piloto aragonés firma la ampliación más larga de la historia del equipo.</p>
+              </div>
+            </a>
+          </div>        </div>
+      </section>
+
+      <!-- ============ CTA ============ -->
+      <section class="cta-band">
+        <div class="wrap cta-inner">
+          <div>
+            <p class="eyebrow"><span class="dot"></span> Únete</p>
+            <h2>Hazte del equipo.</h2>
+            <p>Regístrate y forma parte de la afición de Vértice Racing.</p>
+          </div>
+          <a class="btn btn-primary" href="registro.html">
+            Darse de alta
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <span class="brand-text">
+            <strong>VÉRTICE</strong>
+            <em>RACING TEAM</em>
+          </span>
+          <p>
+            Plantilla web de escudería de competición. Equipo, pilotos y datos
+            son ficticios: sustitúyelos por los de tu proyecto.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="mailto:hola@vertice-racing.com">hola@vertice-racing.com</a></li>
+            <li>+1 123 456 7890</li>
+            <li>Polígono San Valero, 50830 Zaragoza</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Redes</h3>
+          <ul>
+            <li><a href="#" rel="noopener">Instagram</a></li>
+            <li><a href="#" rel="noopener">X / Twitter</a></li>
+            <li><a href="#" rel="noopener">YouTube</a></li>
+            <li><a href="#" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="../docs/Politica de privacidad.txt" download>Política de privacidad</a></li>
+            <li><a href="../docs/Terminos y condiciones.txt" download>Términos y condiciones</a></li>
+            <li><a href="docs/Politica de privacidad.txt" download>Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wrap footer-bottom">
+        <p>&copy; <span data-year>2026</span> Vértice Racing · Plantilla demostrativa.</p>
+        <p id="ultima-actualización">Última actualización: hace 0 segundos</p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Volver arriba">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" /></svg>
+    </button>
+
+    <script src="../js/demo-data.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
